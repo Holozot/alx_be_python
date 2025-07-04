@@ -13,8 +13,6 @@ class BankAccount:
         if not isinstance(amount, (int, float)) or amount <= 0:
             raise ValueError("Deposit amount must be a positive number.")
         self.__account_balance += amount
-        print(f"Deposited: ${int(amount)}.")
-        
 
     def withdraw(self, amount):
         
