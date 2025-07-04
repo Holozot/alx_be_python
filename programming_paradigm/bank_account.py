@@ -24,7 +24,6 @@ class BankAccount:
             raise ValueError("Withdrawal amount must be a positive number.")
         if self.__account_balance >= amount:
             self.__account_balance -= amount
-            print(f"Withdrew: ${int(amount)}.")
             return True
         
         else:
